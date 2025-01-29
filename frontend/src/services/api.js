@@ -44,7 +44,7 @@ const decryptedFile = async (file, password) => {
     formData.append("password", password);
 
     const response = await toast.promise(
-      axios.post("http://localhost:3000/api/decrypt", formData, {
+      axios.post("https://filecrypt-mft8.onrender.com/api/decrypt", formData, {
         responseType: "blob",
       }),
       {
