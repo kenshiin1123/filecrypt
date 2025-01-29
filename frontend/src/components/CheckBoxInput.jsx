@@ -12,7 +12,7 @@ export default function CheckBoxInput({
         checked={advanceEncryption}
       />
       <label htmlFor="checkbox" className="select-none">
-        Advance Encryption
+        Advance Settings
       </label>
     </section>
   );
