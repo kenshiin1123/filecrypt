@@ -1,0 +1,13 @@
+input[type="file"] {
+  margin: auto;
+  padding: 1.5em;
+  border: 2px solid black;
+  background-color: #fff;
+  transition: border-color 0.25s ease-in-out;
+  margin-top: 2rem;
+  border-radius: 0.5rem;
+}
+
+input[type="file"]::file-selector-button {
+  display: none;
+}
