@@ -11,8 +11,8 @@ const encryptFile = async (file, password) => {
         responseType: "blob",
       }),
       {
-        pending: "Encrypting File",
-        success: "File Downloaded",
+        pending: `Encrypting ${file.name}`,
+        success: "Downloading Encrypted File",
         error: "Encryption Failed",
       }
     );
@@ -48,9 +48,9 @@ const decryptedFile = async (file, password) => {
         responseType: "blob",
       }),
       {
-        pending: "Decrypting File",
-        success: "File Downloaded",
-        error: "Decryption Failed",
+        pending: `Decrypting ${file.name}`,
+        success: "Downloading Decrypted File",
+        error: `Decryption Failed: Incorrect password or corrupted file`,
       }
     );
 
